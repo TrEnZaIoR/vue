@@ -22,10 +22,10 @@
         <p>ИРКУТСК (автовокзал) - ЛИСТВЯНКА ("Автокасса" Иркутский р-н)</p>
         <p>ИРКУТСК (автовокзал) - УСОЛЬЕ-СИБИРСКОЕ (Ж/д вокзал)</p>
         <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-          <a href="/prigorod"><img src="img/portfolio/prigorod.jpg" class="img-responsive"></a>
+          <a href="/prigorods"><img src="img/portfolio/prigorod.jpg" class="img-responsive"></a>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 gallery">
-          <a href="/mezgorod"><img src="img/portfolio/mezgorod.jpg" class="img-responsive"></a>
+          <a href="/mezgorods"><img src="img/portfolio/mezgorod.jpg" class="img-responsive"></a>
         </div>
       </div>
       </div>
