@@ -67,7 +67,7 @@ export default {
   created () { },
   methods: {
     CreatePrigorod () {
-      axios.post('http://localhost:8081/api/prigorods', this.prigorods)
+      axios.post('https://anharrum.site/api/prigorods', this.prigorods)
         .then(response => {
           console.log(response)
           console.log('+++ SUCCESS +++')

@@ -70,7 +70,7 @@ export default {
   },
   methods: {
     fetch () {
-      axios.get('http://localhost:8081/api/mezgorods/' + this.$route.params.id)
+      axios.get('https://anharrum.site/api/mezgorods/' + this.$route.params.id)
         .then(response => {
           console.log('+++ SUCCESS +++')
           this.mezgorods = response.data.values.rows
@@ -81,7 +81,7 @@ export default {
         })
     },
     deletMezgorod (id) {
-      axios.delete(`http://localhost:8081/api/mezgorods/${id}`)
+      axios.delete(`https://anharrum.site/api/mezgorods/${id}`)
         .then(res => {
           console.log('Deleted')
           this.fetch()

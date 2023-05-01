@@ -70,7 +70,7 @@ export default {
   },
   methods: {
     fetch () {
-      axios.get('http://localhost:8081/api/prigorods/' + this.$route.params.id)
+      axios.get('https://anharrum.site/api/prigorods/' + this.$route.params.id)
         .then(response => {
           console.log('+++ SUCCESS +++')
           this.prigorods = response.data.values.rows
@@ -81,7 +81,7 @@ export default {
         })
     },
     deletStud (id) {
-      axios.delete(`http://localhost:8081/api/prigorods/${id}`)
+      axios.delete(`https://anharrum.site/api/prigorods/${id}`)
         .then(res => {
           console.log('Deleted')
           this.fetch()

@@ -68,7 +68,7 @@ export default {
   created () {},
   methods: {
     fetch () {
-      axios.get('http://localhost:8081/api/prigorods/' + this.$route.params.id)
+      axios.get('https://anharrum.site/api/prigorods/' + this.$route.params.id)
         .then(response => {
           console.log('+++ updated +++')
           this.prigorods = response.data.values.rows[0]
@@ -79,7 +79,7 @@ export default {
         })
     },
     CreatePrigorod () {
-      axios.put('http://localhost:8081/api/prigorods/' + this.$route.params.id, this.prigorods)
+      axios.put('https://anharrum.site/api/prigorods/' + this.$route.params.id, this.prigorods)
         .then(response => {
           console.log(response)
           console.log('+++ getID +++')

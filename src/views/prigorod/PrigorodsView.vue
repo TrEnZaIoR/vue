@@ -53,7 +53,7 @@ export default {
   },
   methods: {
     fetch () {
-      axios.get('http://localhost:8081/api/prigorods', function (req, res) {
+      axios.get('https://anharrum.site/api/prigorods', function (req, res) {
         res.set('Access-Control-Allow-Origin', '*')
       })
         .then(response => {
@@ -66,7 +66,7 @@ export default {
         })
     },
     deletPrigorod (id) {
-      axios.delete(`http://localhost:8081/api/prigorods/${id}`)
+      axios.delete(`https://anharrum.site/api/prigorods/${id}`)
         .then(res => {
           console.log('Deleted')
           this.fetch()

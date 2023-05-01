@@ -67,7 +67,7 @@ export default {
   created () { },
   methods: {
     CreateMezgorod () {
-      axios.post('http://localhost:8081/api/mezgorods', this.mezgorods)
+      axios.post('https://anharrum.site/api/mezgorods', this.mezgorods)
         .then(response => {
           console.log(response)
           console.log('+++ SUCCESS +++')

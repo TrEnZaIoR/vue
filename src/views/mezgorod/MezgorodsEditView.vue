@@ -68,7 +68,7 @@ export default {
   created () {},
   methods: {
     fetch () {
-      axios.get('http://localhost:8081/api/mezgorods/' + this.$route.params.id)
+      axios.get('https://anharrum.site/api/mezgorods/' + this.$route.params.id)
         .then(response => {
           console.log('+++ updated +++')
           this.mezgorods = response.data.values.rows[0]
@@ -79,7 +79,7 @@ export default {
         })
     },
     EditMezgorod () {
-      axios.put('http://localhost:8081/api/mezgorods/' + this.$route.params.id, this.mezgorods)
+      axios.put('https://anharrum.site/api/mezgorods/' + this.$route.params.id, this.mezgorods)
         .then(response => {
           console.log(response)
           console.log('+++ getID +++')
