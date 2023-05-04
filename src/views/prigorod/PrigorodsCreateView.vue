@@ -71,6 +71,7 @@ export default {
         .then(response => {
           console.log(response)
           console.log('+++ SUCCESS +++')
+          this.$router.push('/prigorods')
         })
         .catch(e => {
           console.log('+++ ERROR +++')

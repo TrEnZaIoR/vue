@@ -71,6 +71,7 @@ export default {
         .then(response => {
           console.log(response)
           console.log('+++ SUCCESS +++')
+          this.$router.push('/mezgorods')
         })
         .catch(e => {
           console.log('+++ ERROR +++')
