@@ -72,7 +72,6 @@ export default {
         .then(response => {
           console.log('+++ updated +++')
           this.mezgorods = response.data.values.rows[0]
-          this.$router.push('/mezgorods')
         })
         .catch(e => {
           console.log('+++ ERROR +++')
