@@ -72,7 +72,6 @@ export default {
         .then(response => {
           console.log('+++ updated +++')
           this.prigorods = response.data.values.rows[0]
-          this.$router.push('/prigorods')
         })
         .catch(e => {
           console.log('+++ ERROR +++')
@@ -84,6 +83,7 @@ export default {
         .then(response => {
           console.log(response)
           console.log('+++ getID +++')
+          this.$router.push('/prigorods')
         })
         .catch(e => {
           console.log('+++ ERROR +++')

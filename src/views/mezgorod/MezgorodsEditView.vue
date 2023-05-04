@@ -84,6 +84,7 @@ export default {
         .then(response => {
           console.log(response)
           console.log('+++ getID +++')
+          this.$router.push('/mezgorods')
         })
         .catch(e => {
           console.log('+++ ERROR +++')
